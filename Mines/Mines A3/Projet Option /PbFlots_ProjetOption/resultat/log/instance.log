@@ -1,0 +1,11 @@
+java.lang.UnsatisfiedLinkError: no cplex1263 in java.library.path
+java.library.path must point to the directory containing the CPLEX shared library
+try invoking java with java -Djava.library.path=...
+Exception in thread "main" java.lang.UnsatisfiedLinkError: ilog.cplex.Cplex.CPXopenCPLEX([I)J
+	at ilog.cplex.Cplex.CPXopenCPLEX(Native Method)
+	at ilog.cplex.CplexI.init(CplexI.java:6624)
+	at ilog.cplex.CplexI.<init>(CplexI.java:629)
+	at ilog.cplex.IloCplex.<init>(IloCplex.java:10621)
+	at ilog.cplex.IloCplex.<init>(IloCplex.java:10636)
+	at Resolution.resoudre(Resolution.java:13)
+	at ResolutionMain.main(ResolutionMain.java:61)
